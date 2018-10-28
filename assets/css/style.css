@@ -1,0 +1,57 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*Nav*/
+.menu-fixed{
+	width: 100%;
+	height: 100px;
+	background-color: #000;
+}
+
+.menu-list{
+	list-style: none;
+	padding:0;
+	margin: 0;
+	display: flex;
+}
+.menu-list__logo{
+	margin:20px;
+	width: 230px;
+	height: 45px;
+	background-image: url("../img/logo-etapacero.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.menu-list__option{
+	margin:20px;
+	padding-top: 10px;
+	text-decoration: none;
+	justify-content: flex-end;
+}
+
+.btn-link{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 18px;
+	padding-bottom: 3px;
+}
+.btn-link:hover{
+	border-bottom: 4px solid #17b7e4;
+}
+
+.btn-default{
+	background-color: #17b7e4;
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	padding:10px 25px;
+	border-radius: 20px;
+	min-height: 50px;
+}
+.btn-default:hover{
+	background-color: #008eb3;
+}
