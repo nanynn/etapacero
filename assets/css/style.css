@@ -8,7 +8,9 @@ body{
 .menu-fixed{
 	width: 100%;
 	height: 100px;
-	background-color: #000;
+	background-color: transparent;
+	position: fixed;
+	z-index: 9999;
 }
 
 .menu-list{
@@ -40,7 +42,7 @@ body{
 	padding-bottom: 3px;
 }
 .btn-link:hover{
-	border-bottom: 4px solid #17b7e4;
+	border-bottom: 3px solid #17b7e4;
 }
 
 .btn-default{
@@ -54,4 +56,30 @@ body{
 }
 .btn-default:hover{
 	background-color: #008eb3;
+}
+/*header*/
+.section-one{
+	background: -webkit-linear-gradient(black, transparent);
+	background: -o-linear-gradient(black, transparent);
+	background: linear-gradient(black, transparent);
+	position:relative;
+}	
+.section-one:before{
+	width: 100%;
+	height: 600px;
+	background-image: url("../img/01.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position:absolute;
+}
+
+.section-one__title{
+	font-size: 80px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	color: #fff;
+	padding-top:15%;
 }
