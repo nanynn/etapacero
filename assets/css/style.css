@@ -18,6 +18,9 @@ body{
 	padding:0;
 	margin: 0;
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
 }
 .menu-list__logo{
 	margin:20px;
@@ -26,12 +29,12 @@ body{
 	background-image: url("../img/logo-etapacero.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	align-self: flex-start;
 }
 .menu-list__option{
 	margin:20px;
 	padding-top: 10px;
 	text-decoration: none;
-	justify-content: flex-end;
 }
 
 .btn-link{
@@ -51,27 +54,28 @@ body{
 	font-size: 18px;
 	text-decoration: none;
 	padding:10px 25px;
-	border-radius: 20px;
+	border-radius: 25px;
 	min-height: 50px;
 }
 .btn-default:hover{
-	background-color: #008eb3;
+	background-color: #0099c6;
 }
 /*header*/
 .section-one{
-	background: -webkit-linear-gradient(black, transparent);
-	background: -o-linear-gradient(black, transparent);
-	background: linear-gradient(black, transparent);
-	position:relative;
-}	
-.section-one:before{
 	width: 100%;
-	height: 600px;
-	background-image: url("../img/01.jpg");
+	height: 884px;
+	background: linear-gradient(black, transparent), url("../img/01.jpg");
+	background: -o-linear-gradient(black, transparent), url("../img/01.jpg");
+	background: -webkit-linear-gradient(black, transparent), url("../img/01.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	position:absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .section-one__title{
@@ -81,5 +85,40 @@ body{
 	justify-content: center;
 	margin: 0;
 	color: #fff;
-	padding-top:15%;
+	padding:20% 10%;
+}
+
+.img-arrow{
+	width: 50px;
+    height: 55px;
+    margin-top: -15%;
+}
+
+/*section two*/
+.section-two{
+	background-color: #fff;
+	width: 100%;
+}
+.section-two_white{
+	padding: 200px;
+}
+.title-section{
+	font-size: 30px;
+	color: #4a4a4a; 
+	line-height: 1.75;
+	font-weight: 700;
+}
+.parrafo-section{
+	font-size: 20px;
+	width: 532px;
+	color: #4a4a4a;
+	font-weight: 400;
+}
+.section-two_image{
+
+}
+
+.barra{
+	border-left: 6px solid #17b7e4;
+
 }
